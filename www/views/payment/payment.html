@@ -1,0 +1,29 @@
+<ion-view title="Pay Now">
+    <ion-content>
+        <div class="card">
+            <div class="item item-text-wrap">
+              <img src="img/bp.png"/><br/>
+                <p id="payemail">yotan@gmail.com</p>
+                <h3 id="payamount">NGN 1,100</h3>
+            </div>
+            <div class="item item-text-wrap">
+                <div class="list">
+                    <label class="item item-input item-input-inset item-light">
+                    <input ng-model="cardnumber" required type="text" placeholder="CARD NUMBER">
+                    </label>
+                    <br/>
+                    <label class="item item-input item-light col-50 inline">
+                        <input ng-model="valid" required type="number" placeholder="valid till">
+                    </label>
+                    <label class="item item-input item-light col-40 inline">
+                        <input ng-model="cvv" required type="number" placeholder="cvv">
+                    </label>
+                    <br/>
+                </div>
+            </div>
+            <div class="item item-text-wrap">
+              <button class="button button-full button-positive" ng-disabled="paymentForm.$invalid" ng-click="doPayment()">Pay Now</button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

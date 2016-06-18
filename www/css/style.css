@@ -1,0 +1,50 @@
+/* Empty. Add your own CSS if you like */
+#accordion div{
+    font-family: "calibri light";
+}
+
+#accordion h3{
+    background-color: white;
+    color: black;
+}
+.table{
+    font-family: 'calibri light';
+}
+
+#summaryinfo span{
+    font-family: 'segoe ui light'
+}
+#payemail{
+    text-align: center;
+    font-family: 'segoe ui'
+}
+#payamount{
+    text-align: center;
+    font-weight: bold;
+    color: green;
+    font-family: 'segoe ui';
+}
+
+#transactions{
+    font-family: 'segoe ui light'
+}
+.alignCenter{
+    text-align: center;
+}
+.alignRight{
+    text-align: right;
+}
+
+//below is for background image of the entire app
+.pane {
+    background-image: url('../img/back_one.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-color: #EEE;
+}
+
+.colorWhite{
+    color: white;
+}
+

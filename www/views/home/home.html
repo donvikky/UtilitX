@@ -1,0 +1,35 @@
+    <ion-view view-title="Buy Power" ng-controller="HomeController as home" hide-nav-bar="true">
+    <ion-content class="padding">
+        <p class="alignRight">
+            <img src="img/power.jpg" width="20%" height="20%"/>
+        </p>
+        <br/><br/>
+        <form name="loginForm">
+        <div class="list">
+            <label class="item item-input">
+                <span class="input-label">Username</span>
+                <input type="text" required name="password" ng-model="home.user.username">
+            </label>
+            <br/>
+            <label class="item item-input">
+                <span class="input-label">Password</span>
+                <input required type="password" name="password" ng-model="home.user.password">
+            </label>
+        </div>
+        <button ng-disabled="loginForm.$invalid" class="button button-full button-positive" ng-click="home.login()">Sign In</button>
+        </form>
+        <br/><br/>
+        <div class="item tabs tabs-secondary tabs-icon-left">
+            <a class="tab-item" href="#/register">
+                <i class="icon ion-person-add"></i> Sign up
+            </a>
+            <a class="tab-item" href="#/forget">
+                <i class="icon ion-locked"></i> Forgot Password
+            </a>
+            <a class="tab-item" href="#/faq">
+                <i class="icon ion-document-text"></i> FAQ
+            </a>
+        </div>
+    </ion-content>
+</ion-view>
+

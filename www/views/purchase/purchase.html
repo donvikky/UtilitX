@@ -1,0 +1,24 @@
+<ion-view view-title="Quick purchase">    
+    <ion-content class="padding">
+        <h5>Quick Purchase</h5>
+        <form name="purchaseForm">
+            <label class="item item-input item-stable">
+                <input ng-model="meter" required type="text" placeholder="Meter number">
+            </label>
+            <br/>
+            <label class="item item-input item-stable">
+                <input ng-model="amount" required type="number" placeholder="Amount">
+            </label>
+            <br/>
+            <ion-radio ng-model="choice" ng-value="'A'">Master Card</ion-radio>
+            <ion-radio ng-model="choice" ng-value="'B'">Visa</ion-radio>
+            <ion-radio ng-model="choice" ng-value="'C'">Verve</ion-radio>
+            <!--<select class="item item-input item-positive">
+                <option value="verve">Verve</option>
+                <option value="mastercard">Master Card</option>
+                <option value="visa">Visa</option>
+            </select>-->
+        <button class="button button-full button-balanced" ng-disabled="purchaseForm.$invalid" ng-click="purchase()">Proceed</button>
+        </form>
+    </ion-content>
+</ion-view>

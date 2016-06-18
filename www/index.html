@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="lib/ionic/css/ionic.material.min.css" rel="stylesheet">
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .pane {
+            //background-image: url('/img/gears.jpg') ; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            background-color: #EEE;
+        }
+    </style>
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="js/jquery-1.12.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ionic/js/ionic.material.min.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="views/home/home.js"></script>
+    <script src="views/faq/faq.js"></script>
+    <script src="views/logout/logout.js"></script>
+    <script src="views/register/register.js"></script>
+    <script src="views/forget/forget.js"></script>
+    <script src="views/dashboard/dashboard.js"></script>
+    <script src="views/purchase/purchase.js"></script>
+    <script src="views/summary/summary.js"></script>
+    <script src="views/payment/payment.js"></script>
+    <script src="views/transactions/transactions.js"></script>
+  </head>
+  <body ng-app="starter">
+  <ion-side-menus enable-menu-with-back-views="true">
+        <ion-side-menu-content>
+         <ion-nav-bar class="bar-positive">
+          <ion-nav-buttons side="left">
+            <button class="button button-clear" menu-toggle="left">
+              <span class="icon ion-navicon"></span>
+            </button>
+          </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view></ion-nav-view>
+      </ion-side-menu-content>
+      <ion-side-menu side="left">
+        <ion-header-bar class="bar-positive">
+          <h1 class="title">Menu</h1>
+        </ion-header-bar>
+        <ion-content>
+            <ion-item class="item-icon-left" ui-sref="purchase" menu-close><span class="icon ion-android-cart"></span> Quick purchase</ion-item>
+            <ion-item class="item-icon-left" ui-sref="transactions" menu-close><span class="icon ion-android-search"></span> Transactions</ion-item>
+            <ion-item class="item-icon-left" ui-sref="profile" menu-close><span class="icon ion-android-contact"></span> Update Profile</ion-item>
+            <ion-item class="item-icon-left" ui-sref="contact" menu-close><span class="icon ion-android-mail"></span> Contact Us</ion-item>
+            <ion-item class="item-icon-left" ui-sref="home" menu-close><span class="icon ion-power"></span> Log Out</ion-item>
+          </ion-list>
+        </ion-content>
+      </ion-side-menu>
+    </ion-side-menus>-->
+  
+  </body>
+</html>

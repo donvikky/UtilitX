@@ -1,0 +1,30 @@
+<ion-view view-title="Transaction History">
+    <ion-content>
+        <div class="list">
+            <div class="item item-input-inset">
+                <label class="item-input-wrapper">
+                <input type="search" ng-model="model.term" placeholder="Enter a transaction number">
+            </label>
+            <button class="button button-small button-positive">Submit</button>
+            </div>
+            <br/>
+            <p class="alignCenter"><strong>OR</strong></p>
+            <div class="item item-input-inset">
+                <label class="item-input-wrapper">
+                    <span class="input-label">start date</span>
+                    <input type="date" ng-model="model.startdate" placeholder="start date"/>
+                </label>
+            </div>
+            <div class="item item-input-inset">
+                <label class="item-input-wrapper">
+                    <span class="input-label">end date</span>
+                    <input type="date" ng-model="model.enddate" placeholder="end date"/>
+                </label>
+            </div>
+            <div class="item item-input-inset">
+                <button class="button button-full button-positive">Search</button>
+            </div>
+            
+        </div>
+    </ion-content>
+</ion-view>
